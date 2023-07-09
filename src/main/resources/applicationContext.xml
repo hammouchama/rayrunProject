@@ -19,9 +19,9 @@
     <tx:annotation-driven/>
     <bean class="org.springframework.jdbc.datasource.DriverManagerDataSource" id="ds">
         <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://localhost:3306/rayban?useSSL=false"/>
-        <property name="username" value="root"/>
-        <property name="password" value=""/>
+        <property name="url" value="jdbc:mysql://eu-cdbr-west-03.cleardb.net/heroku_327eea0fdb6c740?reconnect=true"/>
+        <property name="username" value="b8240705077132"/>
+        <property name="password" value="73f61179"/>
     </bean>
     <bean class="org.springframework.orm.hibernate5.LocalSessionFactoryBean" id="sessionFactory">
         <property name="dataSource" ref="ds"/>
