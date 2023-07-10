@@ -38,7 +38,7 @@
             formData.set('string', myString);
 
             var xhr = new XMLHttpRequest();
-            xhr.open('POST', 'http://127.0.0.1:5000/process', true);
+            xhr.open('POST', 'http://oussama444.pythonanywhere.com/process', true);
 
             xhr.onreadystatechange = function() {
                 if (xhr.readyState === 4 && xhr.status === 200) {
