@@ -34,14 +34,14 @@
     <link rel="stylesheet" href="./asset/NavBar.css?version=1.0">
     <link rel="stylesheet" href="./asset/index.css?version=1.0">
     <link rel="stylesheet" href="./asset/wearGlasses.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
 
 <header class="header-mainbg">
     <nav class="navbar navbar-expand-custom">
-        <a class="navbar-brand navbar-logo" href="#">Ray-Run</a>
+        <a class="navbar-brand navbar-logo" href="index.jsp">Ray-Run</a>
         <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars text-white"></i>
         </button>
