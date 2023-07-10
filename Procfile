@@ -1,1 +1,1 @@
-web: java -D server.port=$PORT -jar target/demo-0.0.1-SNAPSHOT.jar
+web:  java $JAVA_OPTS -jar webapp-runner.jar ${WEBAPP_RUNNER_OPTS} --port $PORT ./target2/rayrunproject-1.0-SNAPSHOT.war
