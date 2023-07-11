@@ -45,7 +45,8 @@ const filterArticles = (titleToFind) => {
 		}
 
 		/* SEARCHING */
-		let tmpTitle = $(this).children(".desc").children("h3").text();
+		let tmpTitle = $(this).children(".desc").children(".upper-desc").children("h3").text();
+
 		let foundTitle = tmpTitle.toLowerCase().indexOf(titleToFind) > -1;
 
 		$(this).toggle(foundCategory && foundTitle);

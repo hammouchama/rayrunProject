@@ -26,7 +26,7 @@
   <main class="grid products">
   <spring:eval expression="@stDao.getAllArticl()" var="myList" />
   <c:forEach var="item" items="${myList}">
-    <article data-aos="fade-up">
+    <article data-aos="fade-up" class="${stock}">
       <div class="image">
         <div class="navbar-logo">Ray-Run</div>
         <img src="${item.getImage()}" alt="Sample photo">
@@ -46,12 +46,20 @@
             ${item.getCategory()}
           </div>
 
+          <c:if test="${item.getQteArt() != 0}">
           <a class="btn btn-primary btn-block addCart" href="addToCartAction.action?codeArt=${item.getCodeArt()}" onclick="insertItem({CodeArt:${item.getCodeArt()},Quantity:1})">
             Add to cart <i class="fas fa-cart-plus"></i>
           </a>
           <a class="btn btn-secondary btn-block viewCart" href="cart.jsp">
             View in cart <i class="fa fa-arrow-right"></i>
           </a>
+          </c:if>
+
+          <c:if test="${item.getQteArt() == 0}">
+            <a class="btn btn-secondary btn-block outOfStock disabled">
+              Out of stock <i class="fas fa-circle-notch"></i>
+            </a>
+          </c:if>
           <div class="price d-flex justify-content-center">
             <c:set var="splitNumber" value="${fn:split(item.getPrixArt(), '.')}"/>
             <c:set var="addedZeros" value='${(fn:length(splitNumber[1]) == 0) ? "00" : ""}' />

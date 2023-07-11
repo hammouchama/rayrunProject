@@ -91,6 +91,11 @@ h1 {
   align-items: center;
   gap: 5px;
 }
+.products.grid article .bottom-desc .outOfStock{
+  display: block;
+  background: #4e555b;
+  color: #d6d8db;
+}
 .products.grid article .bottom-desc .viewCart{
   display: none;
 }
@@ -155,6 +160,10 @@ h1 {
 .products.grid article .desc .bottom-desc .category{
   display: none;
 }
+
+
+
+
 
 .invalid .errorMessage {
   margin: 0;
