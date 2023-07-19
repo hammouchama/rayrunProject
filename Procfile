@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -jar webapp-runner.jar ${WEBAPP_RUNNER_OPTS} --port $PORT ./target/rayrunproject-1.0-SNAPSHOT.war
+web: java $JAVA_OPTS -jar webapp-runner.jar ${WEBAPP_RUNNER_OPTS} --port $PORT ./target2/rayrunproject-1.0-SNAPSHOT.war
