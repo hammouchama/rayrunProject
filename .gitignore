@@ -36,3 +36,7 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+
+## for leting the same War file :
+./target2/rayrunproject-1.0-SNAPSHOT.war
