@@ -1,4 +1,4 @@
-target/
+#target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
@@ -39,6 +39,6 @@ build/
 
 
 ## for leting the same War file :
-./target2/rayrunproject-1.0-SNAPSHOT.war
-*/webapp-runner.jar
-webapp-runner.jar
+#./target2/rayrunproject-1.0-SNAPSHOT.war
+#*/webapp-runner.jar
+#webapp-runner.jar
